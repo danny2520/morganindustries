@@ -1,0 +1,161 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="container-fluid py-5 divisions-section text-dark">
+    <h2 class="text-center mb-5 display-4 fw-bold text-primary lang-en" data-aos="fade-down">Our Business Divisions</h2>
+    <h2 class="text-center mb-5 display-5 fw-bold text-primary lang-zh" data-aos="fade-down">我们的业务板块</h2>
+
+    <!-- Division: Construction -->
+    <div class="row align-items-center mb-5 p-4 bg-light rounded shadow-lg" data-aos="fade-up">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+            <img src="https://images.unsplash.com/photo-1601074231509-dce351c05199?q=80&w=388&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="img-fluid rounded" alt="Construction">
+        </div>
+        <div class="col-lg-6">
+            <h3 class="fw-bold lang-en"><i class="fas fa-hard-hat text-primary"></i> Construction</h3>
+            <h4 class="fw-bold lang-zh">建筑工程</h4>
+            <p class="lang-en">
+                We specialize in executing large-scale infrastructure and structural projects using the latest technology,
+                safety measures, and sustainability practices. Our construction division covers roads, bridges,
+                commercial complexes, housing estates, and urban developments across Nigeria.
+            </p>
+            <p class="lang-zh">
+                我们专注于利用最新技术、安全措施和可持续发展实践，执行大规模基础设施和结构项目。我们的建筑部门涵盖尼日利亚各地的道路、桥梁、商业综合体、住宅区和城市开发。
+            </p>
+            <p class="lang-en">
+                With a proven track record and a highly skilled workforce, we ensure that every project is delivered on time,
+                within budget, and to international quality standards.
+            </p>
+            <p class="lang-zh">
+                凭借良好的履约记录和高素质的员工队伍，我们确保每个项目按时、按预算并符合国际质量标准交付。
+            </p>
+            <canvas id="constructionChart" height="200"></canvas>
+            <a href="#" class="btn btn-outline-primary btn-sm mt-3 lang-en">Learn More</a>
+            <a href="#" class="btn btn-outline-primary btn-sm mt-3 lang-zh">了解更多</a>
+        </div>
+    </div>
+
+    <!-- Division: Real Estate -->
+    <div class="row align-items-center mb-5 p-4 bg-white rounded shadow-lg flex-lg-row-reverse" data-aos="fade-up">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" class="img-fluid rounded" alt="Real Estate">
+        </div>
+        <div class="col-lg-6">
+            <h3 class="fw-bold lang-en"><i class="fas fa-building text-success"></i> Real Estate</h3>
+            <h4 class="fw-bold lang-zh">房地产</h4>
+            <p class="lang-en">
+                We design, build, and manage residential and commercial estates with long-term sustainability in mind.
+                From luxury apartments to affordable housing, our developments are located in major Nigerian cities with essential infrastructure.
+            </p>
+            <p class="lang-zh">
+                我们设计、建造和管理住宅和商业地产，注重长期可持续性。从豪华公寓到经济适用房，我们的项目位于尼日利亚主要城市，基础设施完善。
+            </p>
+            <p class="lang-en">Our commitment is to provide homes and workspaces that combine comfort, security, and modern amenities — helping communities grow and thrive.</p>
+            <p class="lang-zh">我们致力于提供结合舒适、安全和现代化设施的居所和工作空间，助力社区发展与繁荣。</p>
+            <canvas id="realEstateChart" height="200"></canvas>
+            <a href="#" class="btn btn-outline-success btn-sm mt-3 lang-en">Learn More</a>
+            <a href="#" class="btn btn-outline-success btn-sm mt-3 lang-zh">了解更多</a>
+        </div>
+    </div>
+
+    <!-- Division: Logistics -->
+    <div class="row align-items-center mb-5 p-4 bg-light rounded shadow-lg" data-aos="fade-up">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+            <img src="https://images.unsplash.com/photo-1494412519320-aa613dfb7738?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="img-fluid rounded" alt="Logistics">
+        </div>
+        <div class="col-lg-6">
+            <h3 class="fw-bold lang-en"><i class="fas fa-truck text-warning"></i> Logistics</h3>
+            <h4 class="fw-bold lang-zh">物流</h4>
+            <p class="lang-en">
+                Our logistics division ensures the reliable, on-time delivery of cargo, machinery, and consumer goods across Nigeria and West Africa.
+                We manage both ground and air freight operations, backed by technology-driven tracking and secure handling systems.
+            </p>
+            <p class="lang-zh">
+                我们的物流部门确保货物、机械和消费品在尼日利亚和西非可靠、准时地交付。我们管理地面和空运操作，依托技术驱动的跟踪和安全处理系统。
+            </p>
+            <p class="lang-en">Whether it's port services, warehouse solutions, or last-mile delivery, we make logistics seamless and scalable.</p>
+            <p class="lang-zh">无论是港口服务、仓储解决方案还是最后一公里配送，我们都提供无缝且可扩展的物流服务。</p>
+            <canvas id="logisticsChart" height="200"></canvas>
+            <a href="#" class="btn btn-outline-warning btn-sm mt-3 lang-en">Learn More</a>
+            <a href="#" class="btn btn-outline-warning btn-sm mt-3 lang-zh">了解更多</a>
+        </div>
+    </div>
+
+    <!-- Division: Energy -->
+    <div class="row align-items-center mb-5 p-4 bg-white rounded shadow-lg flex-lg-row-reverse" data-aos="fade-up">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+            <img src="https://images.unsplash.com/photo-1521618755572-156ae0cdd74d?q=80&w=876&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="img-fluid rounded mb-3" alt="Energy">
+        </div>
+        <div class="col-lg-6">
+            <h3 class="fw-bold lang-en"><i class="fas fa-bolt text-danger"></i> Energy</h3>
+            <h4 class="fw-bold lang-zh">能源</h4>
+            <p class="lang-en">
+                From solar farms to natural gas plants, we invest in reliable energy projects that empower industries, homes,
+                and rural communities. Our energy team focuses on renewable adoption while supporting Nigeria’s broader grid expansion.
+            </p>
+            <p class="lang-zh">
+                从太阳能农场到天然气电站，我们投资于可靠的能源项目，为工业、家庭和农村社区提供能源支持。我们的能源团队专注于可再生能源的采用，同时支持尼日利亚电网的扩展。
+            </p>
+            <p class="lang-en">We believe energy is a foundation for development — and we’re committed to delivering clean, affordable power.</p>
+            <p class="lang-zh">我们相信能源是发展的基础，并致力于提供清洁、可负担的电力。</p>
+            <canvas id="energyChart" height="200"></canvas>
+            <a href="#" class="btn btn-outline-danger btn-sm mt-3 lang-en">Learn More</a>
+            <a href="#" class="btn btn-outline-danger btn-sm mt-3 lang-zh">了解更多</a>
+        </div>
+    </div>
+
+    <!-- Division: Manufacturing -->
+    <div class="row align-items-center mb-5 p-4 bg-light rounded shadow-lg" data-aos="fade-up">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+            <img src="https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2" class="img-fluid rounded" alt="Manufacturing">
+        </div>
+        <div class="col-lg-6">
+            <h3 class="fw-bold lang-en"><i class="fas fa-industry text-info"></i> Manufacturing</h3>
+            <h4 class="fw-bold lang-zh">制造业</h4>
+            <p class="lang-en">
+                We manufacture essential products including construction tools, cement, metal frames, industrial paints, and packaging materials.
+                Our factories follow international safety and quality protocols with a focus on eco-friendly production.
+            </p>
+            <p class="lang-zh">
+                我们生产包括建筑工具、水泥、金属结构、工业油漆和包装材料在内的关键产品。我们的工厂遵循国际安全和质量标准，注重环保生产。
+            </p>
+            <p class="lang-en">As part of our local content drive, we reduce reliance on imports while creating skilled employment opportunities.</p>
+            <p class="lang-zh">作为本地化战略的一部分，我们减少对进口的依赖，同时创造技术就业机会。</p>
+            <canvas id="manufacturingChart" height="200"></canvas>
+            <a href="#" class="btn btn-outline-info btn-sm mt-3 lang-en">Learn More</a>
+            <a href="#" class="btn btn-outline-info btn-sm mt-3 lang-zh">了解更多</a>
+        </div>
+    </div>
+
+</div>
+
+<!-- Chart.js Scripts -->
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+    const createChart = (id, label, data, color) => {
+        new Chart(document.getElementById(id), {
+            type: 'bar',
+            data: {
+                labels: ["2021", "2022", "2023", "2024"],
+                datasets: [{
+                    label: label,
+                    backgroundColor: color,
+                    data: data
+                }]
+            },
+            options: {
+                responsive: true,
+                scales: { y: { beginAtZero: true } }
+            }
+        });
+    };
+
+    createChart("constructionChart", "Projects", [15, 22, 27, 35], "#0d6efd");
+    createChart("realEstateChart", "Units Built", [80, 100, 140, 200], "#198754");
+    createChart("logisticsChart", "Deliveries", [400, 550, 600, 720], "#ffc107");
+    createChart("energyChart", "MW Supplied", [100, 120, 135, 160], "#dc3545");
+    createChart("manufacturingChart", "Tons Produced", [300, 350, 420, 500], "#0dcaf0");
+</script>
+
+{% endblock %}

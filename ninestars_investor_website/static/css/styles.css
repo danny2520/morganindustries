@@ -1,0 +1,157 @@
+/* === Base === */
+body {
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    background: url('https://images.unsplash.com/photo-1725794288429-5aba98177cbd?w=1920&auto=format&fit=crop&q=80&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGxlYWYlMjBpbiUyMGElMjBsaWdodCUyMGJ1bGJ8ZW58MHx8MHx8fDA%3D') no-repeat center center fixed;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #003366;
+    min-height: 100vh;
+}
+
+/* Remove white backgrounds from Bootstrap containers */
+.container, .bg-light, .bg-white {
+    background-color: transparent !important;
+}
+
+/* === Navbar === */
+.navbar-custom {
+    background-color: rgba(0, 51, 102, 0.95); /* Deep blue with transparency */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+    .navbar-custom .navbar-brand,
+    .navbar-custom .nav-link {
+        color: #fff;
+        font-weight: 600;
+    }
+
+        .navbar-custom .nav-link:hover {
+            color: #cce6ff;
+        }
+
+/* === Language Switch Buttons === */
+.btn-light {
+    background-color: #e6f0ff;
+    color: #003366;
+    border: none;
+    font-weight: 500;
+    padding: 6px 12px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+    .btn-light:hover {
+        background-color: #ccdfff;
+    }
+
+/* === Carousel === */
+.carousel-item {
+    padding: 2rem 0;
+}
+
+/* === Cards === */
+.card {
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.9); /* translucent white */
+}
+
+    .card:hover {
+        transform: translateY(-6px);
+    }
+
+    .card img {
+        max-height: 400px;
+        object-fit: cover;
+        width: 100%;
+    }
+
+.card-body.bg-primary {
+    background-color: #003366 !important;
+    color: #fff;
+    border-radius: 0 0 0.5rem 0.5rem;
+}
+
+/* === Section Headings === */
+section h2,
+section h4 {
+    color: #003366;
+    font-weight: bold;
+}
+
+/* === WhatsApp Floating Button === */
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: white;
+    font-size: 24px;
+    padding: 12px 16px;
+    border-radius: 50%;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: background-color 0.3s ease;
+}
+
+    .whatsapp-float:hover {
+        background-color: #1ebc57;
+    }
+
+/* === Divisions Section === */
+.divisions-section {
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 10px;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+.division-card {
+    transition: transform 0.3s ease;
+    border-radius: 8px;
+}
+
+    .division-card:hover {
+        transform: scale(1.03);
+    }
+
+/* === Responsive Adjustments === */
+@media (max-width: 768px) {
+    .carousel-item {
+        padding: 1rem 0;
+    }
+
+    .divisions-section {
+        padding: 1.5rem;
+    }
+}
+.morgan-logo-text {
+    display: flex;
+    align-items: center;
+    font-family: 'Arial Black', sans-serif;
+}
+
+    .morgan-logo-text span {
+        color: white;
+        position: relative;
+    }
+
+    .morgan-logo-text .o {
+        width: 45px;
+        height: 45px;
+        margin: 0 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .morgan-logo-text .wheel-svg {
+        width: 100%;
+        height: 100%;
+    }
+
+    .morgan-logo-text .a {
+        transform: rotate(-10deg);
+    }

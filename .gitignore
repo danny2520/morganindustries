@@ -1,0 +1,9 @@
+# .gitignore
+.vs/
+*.user
+*.sln
+*.pyproj
+obj/
+*.db
+__pycache__/
+*.pyc

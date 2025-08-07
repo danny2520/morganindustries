@@ -1,0 +1,250 @@
+﻿{% extends 'base.html' %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="bg-primary text-white py-5" style="background: linear-gradient(to right, #0f4c75, #3282b8);">
+    <div class="container text-center">
+        <h1 class="display-4 fw-bold mb-3">
+            <span class="lang-en">Welcome to MORGAN MERCHANT INVESTMENT LTD</span>
+            <span class="lang-zh">欢迎来到摩根商贸投资有限公司</span>
+        </h1>
+        <p class="lead">
+            <span class="lang-en">Innovating Africa's Infrastructure & Industrial Future</span>
+            <span class="lang-zh">引领非洲基础设施和工业的未来</span>
+        </p>
+
+        <a href="{{ url_for('about') }}" class="btn btn-light btn-lg mt-3">
+            <span class="lang-en">Learn More</span>
+            <span class="lang-zh">了解更多</span>
+        </a>
+    </div>
+</section>
+
+<!-- Features Section -->
+<section class="py-5 bg-light">
+    <div class="container text-center">
+        <div class="row g-4">
+            <div class="col-md-4">
+                <i class="bi bi-gear display-4 text-primary mb-3"></i>
+                <h5><span class="lang-en">Engineering Excellence</span><span class="lang-zh">卓越工程</span></h5>
+                <p>
+                    <span class="lang-en">Delivering robust infrastructure across sectors.</span>
+                    <span class="lang-zh">在各个领域提供强大的基础设施。</span>
+                </p>
+            </div>
+            <div class="col-md-4">
+                <i class="bi bi-truck display-4 text-primary mb-3"></i>
+                <h5><span class="lang-en">Reliable Logistics</span><span class="lang-zh">可靠物流</span></h5>
+                <p>
+                    <span class="lang-en">Seamless freight and logistics solutions across West Africa.</span>
+                    <span class="lang-zh">在西非提供无缝的货运和物流解决方案。</span>
+                </p>
+            </div>
+            <div class="col-md-4">
+                <i class="bi bi-globe2 display-4 text-primary mb-3"></i>
+                <h5><span class="lang-en">Sustainable Projects</span><span class="lang-zh">可持续项目</span></h5>
+                <p>
+                    <span class="lang-en">Green and future-ready industrial initiatives.</span>
+                    <span class="lang-zh">绿色且面向未来的工业计划。</span>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Snippet -->
+<section class="py-5">
+    <div class="container">
+        <div class="row align-items-center g-4">
+            <div class="col-md-6">
+                <img src="https://images.unsplash.com/photo-1631626234916-ec46864bde3f?q=80&w=435&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                     class="img-fluid rounded shadow"
+                     alt="About Us"
+                     style="max-height: 400px; object-fit: cover;">
+            </div>
+            <div class="col-md-6">
+                <h2>
+                    <span class="lang-en">About Us</span>
+                    <span class="lang-zh">关于我们</span>
+                </h2>
+                <p class="fs-4">
+                    <span class="lang-en">MORGAN MERCHANT INVESTMENT LTD is a leading provider of infrastructure, logistics, and engineering services across Nigeria and West Africa. With innovation and sustainability at our core, we strive to build a stronger tomorrow.</span>
+                    <span class="lang-zh">摩根商贸投资有限公司是尼日利亚和西非领先的基础设施、物流和工程服务提供商。我们以创新和可持续性为核心，致力于建设更强大的未来。</span>
+                </p>
+                <a href="{{ url_for('about') }}" class="btn btn-outline-primary">
+                    <span class="lang-en">Read More</span>
+                    <span class="lang-zh">阅读更多</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Services Summary -->
+<section class="bg-light py-5">
+    <div class="container text-center">
+        <h2 class="mb-5"><span class="lang-en">Our Services</span><span class="lang-zh">我们的服务</span></h2>
+        <div class="row g-4">
+            <div class="col-md-3">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5>Civil Construction</h5>
+                        <p>Roads, bridges, and industrial complexes.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5>Logistics & Freight</h5>
+                        <p>Efficient, secure cargo movement and handling.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5>Energy Projects</h5>
+                        <p>Solar, grid, and clean energy infrastructure.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5>PPP Infrastructure</h5>
+                        <p>Partnering with governments for sustainable development.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Statistics Counters -->
+<section class="py-5 text-white" style="background-color: #0f4c75;">
+    <div class="container text-center">
+        <div class="row g-4">
+            <div class="col-md-3">
+                <h2 class="counter" data-count="10">0</h2>
+                <p>Years of Experience</p>
+            </div>
+            <div class="col-md-3">
+                <h2 class="counter" data-count="25">0</h2>
+                <p>Completed Projects</p>
+            </div>
+            <div class="col-md-3">
+                <h2 class="counter" data-count="50">0</h2>
+                <p>Team Members</p>
+            </div>
+            <div class="col-md-3">
+                <h2 class="counter" data-count="15">0</h2>
+                <p>Partner Organizations</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials Carousel -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-5"><span class="lang-en">What Our Clients Say</span><span class="lang-zh">客户评价</span></h2>
+        <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner text-center">
+                <div class="carousel-item active">
+                    <blockquote class="blockquote">
+                        <p>"Professional, reliable, and results-driven."</p>
+                        <footer class="blockquote-footer">Lagos State Infrastructure Board</footer>
+                    </blockquote>
+                </div>
+                <div class="carousel-item">
+                    <blockquote class="blockquote">
+                        <p>"MORGAN MERCHANT INVESTMENT LTD delivered beyond expectations."</p>
+                        <footer class="blockquote-footer">West Africa Trade Forum</footer>
+                    </blockquote>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </div>
+</section>
+
+<!-- News Headlines Section -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-4">
+            <span class="lang-en">📰 Latest News</span>
+            <span class="lang-zh">📰 最新新闻</span>
+        </h2>
+        <div class="row">
+            <!-- News Card 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="https://plus.unsplash.com/premium_photo-1682141390385-01da7bc2c0c9?q=80&w=946&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="News 1">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <span class="lang-en">Morgan Merchant Signs Major Logistics Deal</span>
+                            <span class="lang-zh">摩根商贸签署重大物流协议</span>
+                        </h5>
+                        <p class="card-text">
+                            <span class="lang-en">A new partnership expands our infrastructure presence across Northern Nigeria.</span>
+                            <span class="lang-zh">一项新合作扩大了我们在尼日利亚北部的基础设施业务。</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- News Card 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="https://images.unsplash.com/photo-1670689334799-cdc6777db8cc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGluZHVzdHJpYWwlMjBwYXJrfGVufDB8fDB8fHww" class="card-img-top" alt="News 2">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <span class="lang-en">New Industrial Park Launched</span>
+                            <span class="lang-zh">新工业园区启动</span>
+                        </h5>
+                        <p class="card-text">
+                            <span class="lang-en">We launched a modern industrial park in Ogun State to boost manufacturing.</span>
+                            <span class="lang-zh">我们在奥贡州启动了一个现代化工业园区，以促进制造业发展。</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- News Card 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-sm border-0">
+                    <img src="https://images.unsplash.com/photo-1502637098811-fa9526d2b659?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHNvbGFyJTIwZW5lcmd5fGVufDB8fDB8fHww" class="card-img-top" alt="News 3">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <span class="lang-en">Sustainability Initiative Begins</span>
+                            <span class="lang-zh">可持续发展倡议启动</span>
+                        </h5>
+                        <p class="card-text">
+                            <span class="lang-en">Morgan Merchant launches new green projects for cleaner energy.</span>
+                            <span class="lang-zh">摩根商贸推出新绿色项目，推动清洁能源发展。</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- CTA Footer -->
+<section class="py-5 bg-primary text-white text-center">
+    <div class="container">
+        <h2 class="mb-3"><span class="lang-en">Partner With MORGAN MERCHANT INVESTMENT LTD</span><span class="lang-zh">与摩根商贸投资有限公司合作</span></h2>
+        <p><span class="lang-en">Let’s transform Africa’s infrastructure — together.</span><span class="lang-zh">让我们共同改变非洲的基础设施。</span></p>
+        <a href="{{ url_for('contact') }}" class="btn btn-light mt-3">
+            <span class="lang-en">Contact Us</span>
+            <span class="lang-zh">联系我们</span>
+        </a>
+    </div>
+</section>
+
+{% endblock %}
