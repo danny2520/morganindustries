@@ -1,4 +1,4 @@
-/* === Base === */
+﻿/* === Base === */
 body {
     font-family: 'Segoe UI', Roboto, sans-serif;
     background: url('https://images.unsplash.com/photo-1725794288429-5aba98177cbd?w=1920&auto=format&fit=crop&q=80&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGxlYWYlMjBpbiUyMGElMjBsaWdodCUyMGJ1bGJ8ZW58MHx8MHx8fDA%3D') no-repeat center center fixed;
@@ -127,31 +127,3 @@ section h4 {
         padding: 1.5rem;
     }
 }
-.morgan-logo-text {
-    display: flex;
-    align-items: center;
-    font-family: 'Arial Black', sans-serif;
-}
-
-    .morgan-logo-text span {
-        color: white;
-        position: relative;
-    }
-
-    .morgan-logo-text .o {
-        width: 45px;
-        height: 45px;
-        margin: 0 5px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .morgan-logo-text .wheel-svg {
-        width: 100%;
-        height: 100%;
-    }
-
-    .morgan-logo-text .a {
-        transform: rotate(-10deg);
-    }

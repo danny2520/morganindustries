@@ -1,22 +1,20 @@
-function setLanguage(lang) {
-    localStorage.setItem("language", lang);
+﻿document.addEventListener("DOMContentLoaded", function () {
+    const zhBtn = document.getElementById("lang-zh-btn");
+    const enBtn = document.getElementById("lang-en-btn");
 
-    const zhElements = document.querySelectorAll(".lang-zh");
-    const enElements = document.querySelectorAll(".lang-en");
-
-    if (lang === "zh") {
-        zhElements.forEach(el => el.style.display = "inline");
-        enElements.forEach(el => el.style.display = "none");
-    } else {
-        zhElements.forEach(el => el.style.display = "none");
-        enElements.forEach(el => el.style.display = "inline");
+    function showChinese() {
+        document.querySelectorAll(".lang-zh").forEach(el => el.style.display = "inline");
+        document.querySelectorAll(".lang-en").forEach(el => el.style.display = "none");
     }
-}
 
-document.addEventListener("DOMContentLoaded", function () {
-    const savedLang = localStorage.getItem("language") || "zh";
-    setLanguage(savedLang);
+    function showEnglish() {
+        document.querySelectorAll(".lang-zh").forEach(el => el.style.display = "none");
+        document.querySelectorAll(".lang-en").forEach(el => el.style.display = "inline");
+    }
 
-    document.getElementById("lang-zh-btn").addEventListener("click", () => setLanguage("zh"));
-    document.getElementById("lang-en-btn").addEventListener("click", () => setLanguage("en"));
+    zhBtn.addEventListener("click", showChinese);
+    enBtn.addEventListener("click", showEnglish);
+
+    // Default: show Chinese first
+    showChinese();
 });

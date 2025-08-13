@@ -7,6 +7,8 @@
 
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="{{ url_for('static', filename='js/lang.js') }}"></script>
+
     <!-- AOS -->
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <!-- FontAwesome -->
@@ -14,6 +16,7 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
     <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
+
 
     <style>
         body {
@@ -29,22 +32,22 @@
             padding-bottom: 1rem;
         }
 
-        .navbar-custom .navbar-brand {
-            font-size: 1.7rem;
-            font-weight: 700;
-            color: white !important;
-        }
+            .navbar-custom .navbar-brand {
+                font-size: 1.7rem;
+                font-weight: 700;
+                color: white !important;
+            }
 
-        .navbar-custom .nav-link {
-            font-size: 1.2rem;
-            font-weight: 600;
-            color: white !important;
-            margin-right: 1rem;
-        }
+            .navbar-custom .nav-link {
+                font-size: 1.2rem;
+                font-weight: 600;
+                color: white !important;
+                margin-right: 1rem;
+            }
 
-        .navbar-custom .nav-link:hover {
-            color: #ffd700 !important;
-        }
+                .navbar-custom .nav-link:hover {
+                    color: #ffd700 !important;
+                }
 
         .lang-toggle button {
             font-weight: bold;
@@ -66,15 +69,15 @@
             padding: 30px 0;
         }
 
-        footer a {
-            color: #ccc;
-            text-decoration: none;
-        }
+            footer a {
+                color: #ccc;
+                text-decoration: none;
+            }
 
-        footer a:hover {
-            color: white;
-            text-decoration: underline;
-        }
+                footer a:hover {
+                    color: white;
+                    text-decoration: underline;
+                }
 
         .social-icons a {
             font-size: 1.4rem;
@@ -82,9 +85,9 @@
             color: #ddd;
         }
 
-        .social-icons a:hover {
-            color: white;
-        }
+            .social-icons a:hover {
+                color: white;
+            }
     </style>
 </head>
 
@@ -96,36 +99,19 @@
     <nav class="navbar navbar-expand-lg navbar-custom sticky-top" data-aos="fade-down">
         <div class="container-fluid">
             <a class="navbar-brand d-flex align-items-center" href="#" style="font-size: 2rem; font-weight: bold; color: white; letter-spacing: 2px;">
-                <div class="morgan-logo-text">
-                    <span class="m">M</span>
-                    <span class="o">
-                        <svg viewBox="0 0 100 100" class="wheel-svg" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="50" cy="50" r="48" stroke="white" stroke-width="4" fill="none" />
-                            <circle cx="50" cy="50" r="10" fill="white" />
-                            <!-- Spokes -->
-                            <line x1="50" y1="50" x2="50" y2="5" stroke="white" stroke-width="4" />
-                            <line x1="50" y1="50" x2="90" y2="20" stroke="white" stroke-width="4" />
-                            <line x1="50" y1="50" x2="95" y2="50" stroke="white" stroke-width="4" />
-                            <line x1="50" y1="50" x2="90" y2="80" stroke="white" stroke-width="4" />
-                            <line x1="50" y1="50" x2="50" y2="95" stroke="white" stroke-width="4" />
-                            <line x1="50" y1="50" x2="10" y2="80" stroke="white" stroke-width="4" />
-                            <line x1="50" y1="50" x2="5" y2="50" stroke="white" stroke-width="4" />
-                            <line x1="50" y1="50" x2="10" y2="20" stroke="white" stroke-width="4" />
-                        </svg>
-                    </span>
-                    <span class="r">R</span>
-                    <span class="g">G</span>
-                    <span class="a">A</span>
-                    <span class="n">N</span>
-                </div>
+                <img src="{{ url_for('static', filename='images/morgan-logo.png') }}" alt="Morgan Logo" class="img-fluid" style="height: 50px;">
                 <div class="ms-3" style="font-size: 1rem;">
                     <div><span class="lang-zh">摩根招商投资有限公司</span></div>
                     <div><span class="lang-en">MORGAN MERCHANT INVESTMENT LTD</span></div>
                 </div>
             </a>
+
+            <!-- Navbar toggler (inside nav) -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
+            <!-- Navbar menu -->
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item"><a class="nav-link" href="{{ url_for('index') }}"><span class="lang-zh">首页</span><span class="lang-en">Home</span></a></li>
@@ -141,6 +127,19 @@
             </div>
         </div>
     </nav>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="{{ url_for('index') }}"><span class="lang-zh">首页</span><span class="lang-en">Home</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="{{ url_for('about') }}"><span class="lang-zh">关于</span><span class="lang-en">About</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="{{ url_for('divisions') }}"><span class="lang-zh">业务板块</span><span class="lang-en">Divisions</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="{{ url_for('news') }}"><span class="lang-zh">新闻中心</span><span class="lang-en">News</span></a></li>
+            <li class="nav-item"><a class="nav-link" href="{{ url_for('contact') }}"><span class="lang-zh">联系我们</span><span class="lang-en">Contact</span></a></li>
+        </ul>
+        <div class="lang-toggle d-flex">
+            <button id="lang-zh-btn" class="btn btn-light btn-sm me-1">中文</button>
+            <button id="lang-en-btn" class="btn btn-light btn-sm">EN</button>
+        </div>
+    </div>
 
     <!-- Main Content -->
     <div class="container mt-5">
