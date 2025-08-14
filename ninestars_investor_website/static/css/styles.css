@@ -15,8 +15,8 @@ body {
 
 /* === Navbar === */
 .navbar-custom {
-    background-color: rgba(0, 51, 102, 0.95); /* Deep blue with transparency */
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    background-color: #3E3E98; /* lighter blue */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
     .navbar-custom .navbar-brand,
