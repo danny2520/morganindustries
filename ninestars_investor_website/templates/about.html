@@ -4,18 +4,17 @@
 <section class="py-5 bg-light">
     <div class="container">
         <h2 class="text-center mb-5">
-            <span class="lang-en">ABOUT MORGAN MERCHANT INVESTMENT LTD</span>
-            <span class="lang-zh">关于摩根招商投资有限公司</span>
+            <span class="lang-en">ABOUT MORGAN INDUSTRIAL PARK</span>
+            <span class="lang-zh">关于摩根工业园（奥贡州）</span>
         </h2>
 
         <!-- Who We Are Section -->
         <div class="row align-items-center mb-5">
             <div class="col-lg-6 mb-4 mb-lg-0">
                 <a href="{{ url_for('about') }}">
-                    <img src="https://images.unsplash.com/photo-1553024055-5f059b0005c7?q=80&w=1033&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                         class="img-fluid rounded shadow"
-                         alt="About Morgan Merchant Investment LTD"
-                         style="max-height: 400px; object-fit: cover;">
+<img src="{{ url_for('static', filename='images/myphoto.jpg') }}" 
+     alt="Some image" 
+     style="width: 100%; max-height: 350px; object-fit: cover;">
                 </a>
             </div>
             <div class="col-lg-6">
@@ -25,10 +24,10 @@
                 </h4>
                 <p class="mb-3">
                     <span class="lang-en">
-                        MORGAN MERCHANT INVESTMENT LTD is a leading industrial and development services provider headquartered in Ode-Remo, Ogun State, Nigeria. With over a decade of excellence, we offer sustainable, modern, and scalable infrastructure solutions tailored to West Africa’s development needs.
+                        It is planned to build an industrial park with an area of over 3,000 acres in Ogun State in alongside the expressway in Ode-remo, Ogere and Iperu. The park will include various types of factories, trade malls, logistics parks, as well as a section of farmland within it.The park will focus on developing industries such as food, textiles, automobiles, home appliances, new energy, and agriculture.
                     </span>
                     <span class="lang-zh">
-                        摩根商贸投资有限公司是一家领先的工业与开发服务提供商，总部位于尼日利亚奥德雷莫。十多年来，我们致力于提供可持续、现代化且可扩展的基础设施解决方案，助力西非地区的发展。
+                        计划在奥贡州Ode-remo、Ogere、Iperu的高速路边，建立一座面积超过3000Acres的工业园，包含各类型工厂、商贸城、物流园，并在其中做一部分农场。园区将重点发展食品、纺织、汽车、家电、新能源、农业等产业。
                     </span>
                 </p>
                 <p>
@@ -146,8 +145,8 @@
                     </h4>
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item">
-                            <span class="lang-en">Civil Engineering & Construction</span>
-                            <span class="lang-zh">土木工程与建设</span>
+                            <span class="lang-en">Acquisition of Land</span>
+                            <span class="lang-zh">园区土地供应</span>
                         </li>
                         <li class="list-group-item">
                             <span class="lang-en">Logistics & Freight Handling</span>
@@ -319,7 +318,7 @@
     <div class="row justify-content-center mb-5">
         <div class="col-12 col-md-4 text-center" data-aos="zoom-in">
             <img src="{{ url_for('static', filename='images/team1.jpg') }}" class="rounded-circle img-fluid mb-5" style="max-width: 220px;" alt="CEO">
-            <h6 class="mb-0">潘卫全<br>PAN  WEIQUAN</h6>
+            <h6 class="mb-0">潘卫全<br>总经理<br>PAN  WEIQUAN</h6>
             <small class="text-muted">CEO / MD</small>
         </div>
     </div>
@@ -329,70 +328,57 @@
         <!-- Team Member 2 -->
         <div class="col-6 col-md-3 text-center" data-aos="flip-left" data-aos-delay="100">
             <img src="{{ url_for('static', filename='images/team2.jpg') }}" class="rounded-circle img-fluid mb-2" style="max-width: 140px;" alt="Team Member">
-            <h6 class="mb-0">王国安<br>WANG GUOAN</h6>
+            <h6 class="mb-0">王国安<br>投融资总监<br>WANG GUOAN</h6>
             <small class="text-muted">Special Senior Adviser</small>
         </div>
 
         <!-- Team Member 3 -->
         <div class="col-6 col-md-3 text-center" data-aos="flip-left" data-aos-delay="200">
             <img src="{{ url_for('static', filename='images/team3.jpg') }}" class="rounded-circle img-fluid mb-2" style="max-width: 140px;" alt="Team Member">
-            <h6 class="mb-0">张亚南<br>  ZHANG YNAN  OSCAR</h6>
+            <h6 class="mb-0">张亚南<br>项目总<br>  ZHANG YNAN  OSCAR</h6>
             <small class="text-muted">Project General Manager</small>
         </div>
 
         <!-- Team Member 4 -->
         <div class="col-6 col-md-3 text-center" data-aos="flip-left" data-aos-delay="300">
             <img src="{{ url_for('static', filename='images/team4.jpg') }}" class="rounded-circle img-fluid mb-2" style="max-width: 300px;" alt="Team Member">
-            <h6 class="mb-0">郑志鹏<br>ZHENG ZHIPENG</h6>
+            <h6 class="mb-0">郑志鹏<br>招商总监<br>ZHENG ZHIPENG</h6>
             <small class="text-muted">Business Manager</small>
         </div>
 
         <!-- Team Member 5 -->
         <div class="col-6 col-md-3 text-center" data-aos="flip-left" data-aos-delay="400">
             <img src="{{ url_for('static', filename='images/team5.jpg') }}" class="rounded-circle img-fluid mb-2" style="max-width: 180px;" alt="Team Member">
-            <h6 class="mb-0">袁立<br>YUAN LI CHRIS</h6>
+            <h6 class="mb-0">袁立<br>设计总监<br>YUAN LI CHRIS</h6>
             <small class="text-muted">Head of Designs Department</small>
         </div>
 
         <!-- Team Member 11 -->
         <div class="col-6 col-md-3 text-center" data-aos="flip-left" data-aos-delay="500">
             <img src="{{ url_for('static', filename='images/team11.jpg') }}" class="rounded-circle img-fluid mb-2" style="max-width: 140px;" alt="Team Member">
-            <h6 class="mb-0">庞松磊<br>PANG  SONGLEI</h6>
+            <h6 class="mb-0">庞松磊<br>财务总监<br>PANG  SONGLEI</h6>
             <small class="text-muted">Financial Manager</small>
         </div>
 
         <!-- Team Member 6 -->
         <div class="col-6 col-md-3 text-center" data-aos="flip-left" data-aos-delay="500">
             <img src="{{ url_for('static', filename='images/team6.jpg') }}" class="rounded-circle img-fluid mb-2" style="max-width: 140px;" alt="Team Member">
-            <h6 class="mb-0">解旭阳<br>XIE XUYANG</h6>
+            <h6 class="mb-0">解旭阳<br>项目经理<br>XIE XUYANG</h6>
             <small class="text-muted">Operations Manager</small>
         </div>
 
         <!-- Team Member 9 -->
         <div class="col-6 col-md-3 text-center" data-aos="flip-left" data-aos-delay="500">
             <img src="{{ url_for('static', filename='images/team9.jpg') }}" class="rounded-circle img-fluid mb-2" style="max-width: 140px;" alt="Team Member">
-            <h6 class="mb-0">吐哈大圣·阿敏提。<br>TUHADASHENG•AMINTI</h6>
+            <h6 class="mb-0">吐哈大圣·阿敏提。<br>测绘总监<br>TUHADASHENG•AMINTI</h6>
             <small class="text-muted">Head of Survey Department</small>
         </div>
 
         <!-- Team Member 10 -->
         <div class="col-6 col-md-3 text-center" data-aos="flip-left" data-aos-delay="500">
             <img src="{{ url_for('static', filename='images/team10.jpg') }}" class="rounded-circle img-fluid mb-2" style="max-width: 150px;" alt="Team Member">
-            <h6 class="mb-0">张晓涵<br>ZHANG  XIAOHAN</h6>
+            <h6 class="mb-0">张晓涵<br>人力总监<br>ZHANG  XIAOHAN</h6>
             <small class="text-muted">Adminstration Manager</small>
-        </div>
-        <!-- Team Member 7 -->
-        <div class="col-6 col-md-3 text-center" data-aos="flip-left" data-aos-delay="600">
-            <img src="{{ url_for('static', filename='images/team7.jpg') }}" class="rounded-circle img-fluid mb-2" style="max-width: 140px;" alt="Team Member">
-            <h6 class="mb-0">INYANG IDONGESIT DANIEL</h6>
-            <small class="text-muted">Human Resources Manager</small>
-        </div>
-
-        <!-- Team Member 8 -->
-        <div class="col-6 col-md-3 text-center" data-aos="flip-left" data-aos-delay="700">
-            <img src="{{ url_for('static', filename='images/team8.jpg') }}" class="rounded-circle img-fluid mb-2" style="max-width: 140px;" alt="Team Member">
-            <h6 class="mb-0">FASHOLA SAMUEL KAYODE</h6>
-            <small class="text-muted">Administration Manager</small>
         </div>
     </div>
 </div>
@@ -408,8 +394,8 @@
             <div class="col-md-4" data-aos="fade-up">
                 <blockquote class="blockquote p-4 border rounded shadow-sm h-100">
                     <p>
-                        <span class="lang-zh">Ninestars提前完成了我们的项目。令人难以置信的工作态度。</span>
-                        <span class="lang-en">Ninestars delivered our project ahead of schedule. Incredible work ethic.</span>
+                        <span class="lang-zh">Morgan提前完成了我们的项目。令人难以置信的工作态度。</span>
+                        <span class="lang-en">Morgan delivered our project ahead of schedule. Incredible work ethic.</span>
                     </p>
                     <footer class="blockquote-footer mt-2">
                         <span class="lang-zh">拉各斯物流有限公司</span>
@@ -432,8 +418,8 @@
             <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
                 <blockquote class="blockquote p-4 border rounded shadow-sm h-100">
                     <p>
-                        <span class="lang-zh">Ninestars团队在各个方面都超出了我们的期望。</span>
-                        <span class="lang-en">The Ninestars team exceeded our expectations in every area.</span>
+                        <span class="lang-zh">Morgan团队在各个方面都超出了我们的期望。</span>
+                        <span class="lang-en">The Morgan team exceeded our expectations in every area.</span>
                     </p>
                     <footer class="blockquote-footer mt-2">
                         <span class="lang-zh">新星能源集团</span>
@@ -478,7 +464,7 @@
         </h4>
         <p class="mb-4">
             <span class="lang-zh">联系Ninestars，探索我们如何支持您的愿景。</span>
-            <span class="lang-en">Contact Ninestars to explore how we can support your vision.</span>
+            <span class="lang-en">Contact Morgan to explore how we can support your vision.</span>
         </p>
         <a href="{{ url_for('contact') }}" class="btn btn-light px-4 py-2">
             <span class="lang-zh">联系我们</span>

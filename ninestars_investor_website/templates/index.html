@@ -9,7 +9,7 @@
             <span class="lang-zh">欢迎来到摩根招商投资有限公司</span>
         </h1>
         <p class="lead">
-            <span class="lang-en">Innovating Africa's Infrastructure & Industrial Future</span>
+            <span class="lang-en">A Comprehensive Investment Platform For The African Market</span>
             <span class="lang-zh">引领非洲基础设施和工业的未来</span>
         </p>
         <a href="{{ url_for('about') }}" class="btn btn-light btn-lg mt-3">
@@ -26,12 +26,12 @@
             <div class="col-md-4">
                 <i class="bi bi-gear display-4 text-primary mb-3"></i>
                 <h5>
-                    <span class="lang-en">Engineering Excellence</span>
-                    <span class="lang-zh">卓越工程</span>
+                    <span class="lang-en">Industrious Park Development</span>
+                    <span class="lang-zh">产业园开发</span>
                 </h5>
                 <p>
-                    <span class="lang-en">Delivering robust infrastructure across sectors.</span>
-                    <span class="lang-zh">在各个领域提供强大的基础设施。</span>
+                    <span class="lang-en">Trade Malls And Logistics Park.</span>
+                    <span class="lang-zh">商贸城和物流园。</span>
                 </p>
             </div>
             <div class="col-md-4">
@@ -48,12 +48,12 @@
             <div class="col-md-4">
                 <i class="bi bi-globe2 display-4 text-primary mb-3"></i>
                 <h5>
-                    <span class="lang-en">Sustainable Projects</span>
-                    <span class="lang-zh">可持续项目</span>
+                    <span class="lang-en">Comprehensive Support facilities</span>
+                    <span class="lang-zh">完善的配套设施</span>
                 </h5>
                 <p>
-                    <span class="lang-en">Green and future-ready industrial initiatives.</span>
-                    <span class="lang-zh">绿色且面向未来的工业计划。</span>
+                    <span class="lang-en">Provides Sounds Infrastruture Conditions For Enterprises To Settle In And Develop </span>
+                    <span class="lang-zh">为入驻企业的发展提供良好的基础设施条件。</span>
                 </p>
             </div>
         </div>
@@ -65,10 +65,9 @@
     <div class="container">
         <div class="row align-items-center g-4">
             <div class="col-md-6">
-                <img src="https://images.unsplash.com/photo-1631626234916-ec46864bde3f?q=80&w=435&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                     class="img-fluid rounded shadow"
-                     alt="About Us"
-                     style="max-height: 400px; object-fit: cover;">
+<img src="{{ url_for('static', filename='images/new-photo.jpg') }}" 
+     alt="Description" 
+     style="width: 600px; height: auto;">
             </div>
             <div class="col-md-6">
                 <h2>
@@ -76,8 +75,10 @@
                     <span class="lang-zh">关于我们</span>
                 </h2>
                 <p class="fs-4">
-                    <span class="lang-en">MORGAN MERCHANT INVESTMENT LTD is a leading provider of infrastructure, logistics, and engineering services across Nigeria and West Africa. With innovation and sustainability at our core, we strive to build a stronger tomorrow.</span>
-                    <span class="lang-zh">摩根商贸投资有限公司是尼日利亚和西非领先的基础设施、物流和工程服务提供商。我们以创新和可持续性为核心，致力于建设更强大的未来。</span>
+                    <span class="lang-en">MORGAN MERCHANT INVESTMENT LTD is a comprehensive investment company headquartered in Nigeria. The company has a wide range of business operations, including but not limited to mining, agriculture (Nine Stars), industrial park development, manufacturing and other fields. It has made great contributions to the improvement of the local economy and provided a large number of jobs .</span>
+                    <span class="lang-zh">
+                        摩根招商投资有限公司是总部位于尼日利亚的综合性投资公司。公司业务覆盖广泛，包括但不限于矿产开发、农业（Nine Stars）、工业园开发、生产制造等领域，为当地经济的提升做出了极大的贡献，并提供了大量的工作岗位。
+                    </span>
                 </p>
                 <a href="{{ url_for('about') }}" class="btn btn-outline-primary">
                     <span class="lang-en">Read More</span>
@@ -100,12 +101,12 @@
                 <div class="card h-100 shadow-sm">
                     <div class="card-body">
                         <h5>
-                            <span class="lang-en">Civil Construction</span>
-                            <span class="lang-zh">土木建筑</span>
+                            <span class="lang-en">Acquisition Of Land </span>
+                            <span class="lang-zh">园区土地供应</span>
                         </h5>
                         <p>
-                            <span class="lang-en">Roads, bridges, and industrial complexes.</span>
-                            <span class="lang-zh">道路、桥梁和工业园区。</span>
+                            <span class="lang-en">Supply of land and factory buildings for industrial parks, factories, warehouses, etc.</span>
+                            <span class="lang-zh">工业园、工厂、仓储等土地及厂房供应</span>
                         </p>
                     </div>
                 </div>
@@ -247,7 +248,10 @@
             <!-- News Card 1 -->
             <div class="col-md-4 mb-4">
                 <div class="card h-100 shadow-sm border-0">
-                    <img src="https://plus.unsplash.com/premium_photo-1682141390385-01da7bc2c0c9?q=80&w=946&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="News 1">
+                    <img src="{{ url_for('static', filename='images/new1.jpg') }}"
+                         class="card-img-top"
+                         alt="News 1"
+                         style="width: 100%; max-height: 250px; object-fit: cover;">
                     <div class="card-body">
                         <h5 class="card-title">
                             <span class="lang-en">Morgan Merchant Signs Major Logistics Deal</span>
@@ -263,7 +267,10 @@
             <!-- News Card 2 -->
             <div class="col-md-4 mb-4">
                 <div class="card h-100 shadow-sm border-0">
-                    <img src="https://images.unsplash.com/photo-1670689334799-cdc6777db8cc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGluZHVzdHJpYWwlMjBwYXJrfGVufDB8fDB8fHww" class="card-img-top" alt="News 2">
+                    <img src="{{ url_for('static', filename='images/new2.jpg') }}"
+                         class="card-img-top"
+                         alt="News 1"
+                         style="width: 100%; max-height: 250px; object-fit: cover;">
                     <div class="card-body">
                         <h5 class="card-title">
                             <span class="lang-en">New Industrial Park Launched</span>
