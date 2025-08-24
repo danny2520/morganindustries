@@ -99,7 +99,7 @@
     <nav class="navbar navbar-expand-lg navbar-custom sticky-top" data-aos="fade-down">
         <div class="container-fluid">
             <a class="navbar-brand d-flex align-items-center" href="#" style="font-size: 2rem; font-weight: bold; color: white; letter-spacing: 2px;">
-                <img src="{{ url_for('static', filename='images/morgan-logo.png') }}" alt="Morgan Logo" class="img-fluid" style="height: 50px;">
+                <img src="{{ url_for('static', filename='images/morgan-logo.png') }}" alt="Morgan Logo" class="img-fluid" style="height: 65px;">
                 <div class="ms-3" style="font-size: 2rem; font-weight: bold;">
                     <div><span class="lang-zh">摩根招商投资有限公司</span></div>
                     <div><span class="lang-en">MORGAN MERCHANT INVESTMENT LTD</span></div>
@@ -112,21 +112,21 @@
             </button>
 
             <!-- Navbar menu -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for('index') }}"><span class="lang-zh">首页</span><span class="lang-en">Home</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for('about') }}"><span class="lang-zh">关于</span><span class="lang-en">About</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for('divisions') }}"><span class="lang-zh">业务板块</span><span class="lang-en">Divisions</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for('news') }}"><span class="lang-zh">新闻中心</span><span class="lang-en">News</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ url_for('contact') }}"><span class="lang-zh">联系我们</span><span class="lang-en">Contact</span></a></li>
+                </ul>
+                <div class="lang-toggle d-flex">
+                    <button id="lang-zh-btn" class="btn btn-light btn-sm me-1">中文</button>
+                    <button id="lang-en-btn" class="btn btn-light btn-sm">EN</button>
+                </div>
+            </div>
         </div>
     </nav>
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item"><a class="nav-link" href="{{ url_for('index') }}"><span class="lang-zh">首页</span><span class="lang-en">Home</span></a></li>
-            <li class="nav-item"><a class="nav-link" href="{{ url_for('about') }}"><span class="lang-zh">关于</span><span class="lang-en">About</span></a></li>
-            <li class="nav-item"><a class="nav-link" href="{{ url_for('divisions') }}"><span class="lang-zh">业务板块</span><span class="lang-en">Divisions</span></a></li>
-            <li class="nav-item"><a class="nav-link" href="{{ url_for('news') }}"><span class="lang-zh">新闻中心</span><span class="lang-en">News</span></a></li>
-            <li class="nav-item"><a class="nav-link" href="{{ url_for('contact') }}"><span class="lang-zh">联系我们</span><span class="lang-en">Contact</span></a></li>
-        </ul>
-        <div class="lang-toggle d-flex">
-            <button id="lang-zh-btn" class="btn btn-light btn-sm me-1">中文</button>
-            <button id="lang-en-btn" class="btn btn-light btn-sm">EN</button>
-        </div>
-    </div>
 
     <!-- Main Content -->
     <div class="container mt-5">
